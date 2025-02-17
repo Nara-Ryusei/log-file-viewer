@@ -1,0 +1,26 @@
+.floating-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw; /* Ensure sidebar does not exceed viewport width */
+}
+
+.sidebar-drag-handle {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 10px;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 1010;
+  background-color: transparent;
+}

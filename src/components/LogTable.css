@@ -1,0 +1,43 @@
+.spreadsheet {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  /* Ensure horizontal scrollbar is not shown */
+  overflow-x: hidden;
+}
+
+.spreadsheet th,
+.spreadsheet td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+.spreadsheet th {
+  background: #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.spreadsheet .filter-row input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.spreadsheet tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+.spreadsheet tr:hover td {
+  background-color: #f1f1f1;
+}
